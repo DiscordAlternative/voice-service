@@ -1,0 +1,33 @@
+{
+    "name": "voice-service",
+    "version": "1.0.0",
+    "description": "Voice and video communication service for Discord alternative",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "bun run --watch src/index.ts",
+        "start": "bun run src/index.ts",
+        "build": "bun build src/index.ts --outdir dist --target bun",
+        "test": "bun test"
+    },
+    "keywords": [
+        "webrtc",
+        "voice",
+        "video",
+        "mediasoup",
+        "sfu"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "elysia": "^1.3.3",
+        "mediasoup": "^3.14.13",
+        "ioredis": "^5.4.2",
+        "pino": "^9.5.0",
+        "pino-pretty": "^13.0.0",
+        "nanoid": "^5.0.9"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "bun-types": "latest"
+    }
+}
